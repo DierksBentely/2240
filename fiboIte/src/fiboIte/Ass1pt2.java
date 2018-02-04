@@ -20,7 +20,7 @@ public class Ass1pt2
 		// take user input store in variable aptly named userInput
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("please enter a number to calculate fibbonacci numbers to");
-		int userNum = userInput.nextInt();
+		long userNum = userInput.nextInt();
 		
 		// make sure user enters positive number
 		if (userNum < 0)
@@ -36,10 +36,10 @@ public class Ass1pt2
 		System.out.println("Time elapsed was: " + (endTime - startTime) + " nanoseconds");
 	}
 	
-	public static void calcNum(int userNum)
+	public static void calcNum(long userNum)
 	{
 		// creating new variable array to store the values in
-		int[] numSeq = new int [100];
+		long[] numSeq = new long [100];
 		// setting first 2 numbers to 0 and 1 respectively
 		numSeq[0]=0;
 		numSeq[1]=1;
