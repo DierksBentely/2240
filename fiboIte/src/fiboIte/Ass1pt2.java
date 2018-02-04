@@ -17,7 +17,7 @@ public class Ass1pt2
 		// initialize variable for time storage
 		long startTime = System.nanoTime();
 		
-		// take user input store in vaiable aptly named userInput
+		// take user input store in variable aptly named userInput
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("please enter a number to calculate fibbonacci numbers to");
 		int userNum = userInput.nextInt();
@@ -43,9 +43,10 @@ public class Ass1pt2
 		// setting first 2 numbers to 0 and 1 respectively
 		numSeq[0]=0;
 		numSeq[1]=1;
-		// for loop printing out the fibo numbers until reaches userNum
+		// for loop printing out the fibo numbers until reaches userNum +3
+		// the reason for + 3 was I had to do a lot of stuff with i +/- numbers to make it work perfectly
 		// starts at 2 because 0 = 0 and 1 = 1, which is constant
-		for (int i = 2; i < userNum; i++)
+		for (int i = 2; i < (userNum+3); i++)
 		{
 			// calculating n = n -1 + n - 2
 			// which makes the next number equal to the previous 2 numbers

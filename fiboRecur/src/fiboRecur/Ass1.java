@@ -20,7 +20,7 @@ public class Ass1
 		// user input
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("please enter a number to calculate fibbonacci numbers to");
-		int userNum = userInput.nextInt();
+		long userNum = userInput.nextInt();
 		
 		// printing error message if user's number < 1
 		if (userNum < 0)
@@ -29,7 +29,7 @@ public class Ass1
 		}
 
 		// loop calling recursive function with i
-		for (int i = 0; i<= userNum-1; i++)
+		for (int i = 0; i<= userNum; i++)
 		{
 			// recursive method call function
 			System.out.println(fiboRecur(i));
@@ -41,7 +41,7 @@ public class Ass1
 		System.out.println("Time elapsed was: " + (endTime - startTime) + " nanoseconds");
 	}
 
-	public static int fiboRecur(int fiboNum)
+	public static long fiboRecur(long fiboNum)
 	{
 		// make 0 = 0, which is the 1st number as a constant
 		if (fiboNum < 1)
