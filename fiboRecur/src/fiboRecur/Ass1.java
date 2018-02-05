@@ -14,14 +14,14 @@ public class Ass1
 	// main method
 	public static void main(String[] args)
 	{
-		// initializing variable to store start time
-		long startTime = System.nanoTime();
-		
 		// user input
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("please enter a number to calculate fibbonacci numbers to");
 		long userNum = userInput.nextInt();
 		
+		// initializing variable to store start time
+		long startTime = System.nanoTime();
+	
 		// printing error message if user's number < 1
 		if (userNum < 0)
 		{
